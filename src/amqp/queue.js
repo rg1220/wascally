@@ -19,10 +19,9 @@ function aliasOptions( options, aliases ) {
 
 function define( channel, options, subscriber, connectionName ) {
 	var valid = aliasOptions( options, {
-		queuelimit: 'maxLength',
 		queueLimit: 'maxLength',
-		deadletter: 'deadLetterExchange',
-		deadLetter: 'deadLetterExchange'
+		deadLetterExchange: 'deadLetterExchange',
+		deadLetterRoutingKey: 'deadLetterRoutingKey'
 	}, 'subscribe', 'limit', 'noBatch' );
 	topLog.info( 'Declaring queue \'%s\' on connection \'%s\' with the options: %s',
 		options.name, connectionName, JSON.stringify( _.omit( options, [ 'name' ] ) ) );
