@@ -1,9 +1,9 @@
 {
-  "name": "wascally",
-  "version": "0.2.3",
+  "name": "352-wascally",
+  "version": "0.2.4",
   "description": "Abstractions to simplify working with the wascally wabbitMQ",
   "main": "src/index.js",
-  "repository": "https://github.com/leankit-labs/wascally",
+  "repository": "https://github.com/dvideby0/wascally",
   "scripts": {
     "test": "gulp coverage"
   },
